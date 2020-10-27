@@ -19,7 +19,8 @@
 
 package org.mapfish.geo;
 
-import com.vividsolutions.jts.geom.Geometry;
+
+import org.locationtech.jts.geom.Geometry;
 
 /**
  *
@@ -27,18 +28,18 @@ import com.vividsolutions.jts.geom.Geometry;
  */
 public class MfGeometry implements MfGeo {
     private final Geometry jtsGeometry;
-    
+
     /**
      * Creates a new instance of MfGeometry
      */
     public MfGeometry(Geometry jtsGeometry) {
         this.jtsGeometry = jtsGeometry;
     }
-    
+
     public GeoType getGeoType() {
         return GeoType.GEOMETRY;
     }
-    
+
     public Geometry getInternalGeometry() {
         return jtsGeometry;
     }

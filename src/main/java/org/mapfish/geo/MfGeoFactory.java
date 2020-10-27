@@ -19,8 +19,8 @@
 
 package org.mapfish.geo;
 
-import com.vividsolutions.jts.geom.Geometry;
 import org.json.JSONObject;
+import org.locationtech.jts.geom.Geometry;
 
 import java.util.Collection;
 
